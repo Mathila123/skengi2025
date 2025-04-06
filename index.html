@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Engineering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../images/skengi_logo.png" alt="Logo" />
+      </div>
+      <div class="contact-info">
+        <span class="phone-icon">&#128222;</span>
+        <span class="contact-number">Hotline: +94 77 491 1169</span>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero-section">
+    <h1>
+      <span class="welcome-line1">Welcome to</span>
+      <span class="welcome-line2">SK Engineering</span>
+    </h1>
+    <h2>Feel the cool breeze</h2>
+  </main>
+
+  <section class="about-us">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>We provide top-notch cooling and engineering solutions to meet your everyday needs. Our mission is to ensure comfort, innovation, and reliability for every customer we serve.</p>
+    </div>
+    <div class="about-image">
+      <img src="../images/aboutusinmage.jpg" alt="About SK Engineering" />
+    </div>
+  </section>
+
+  <section class="our-services">
+    <div class="services-text">
+      <h2>Our Services</h2>
+      <p>From air conditioning installation to system repairs and maintenance, we offer complete HVAC solutions tailored to your requirements.</p>
+    </div>
+    <div class="services-boxes">
+      <div class="service-box">A/C Installation</div>
+      <div class="service-box">A/C Maintenance</div>
+      <div class="service-box">A/C Spare Parts</div>
+      <div class="service-box">VRV-VRF Installation</div>
+    </div>
+  </section>
+
+  <section class="Why-Choose-Us">
+    <div class="about-text">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Trusted by 1000+ customers</li>
+        <li>Affordable and transparent pricing</li>
+        <li>24/7 customer support</li>
+        <li>Certified and experienced team</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <img src="../images/thinking.jpeg" alt="About SK Engineering" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>SK Engineering</h3>
+        <div class="feel">
+          <p>Feel the cool breeze</p>
+        </div>
+        <p><strong>Address:</strong> No,1/34 E, Alhena, Yatadolawaththa, Mathugama</p>
+        <p><strong>Hotline:</strong> +94 77 491 1169</p>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2025 SK Engineering. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
+
+<style> 
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0faff;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d0ecff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-icon {
+  font-size: 1.2rem;
+  color: #005f99;
+}
+
+.contact-number {
+  color: #005f99;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #005f99;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #005f99;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #003d66;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #eaf6ff;
+}
+
+.hero-section h1 {
+  font-size: 4.2rem;
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+.hero-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #005f99;
+}
+
+/* About Us Section */
+.about-us,
+.Why-Choose-Us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text p {
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+/* Services Section */
+.our-services {
+  padding: 60px 10%;
+  background-color: #eaf6ff;
+}
+
+.services-text {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.services-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.service-box {
+  background-color: #d0ecff;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 150px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #002b5c;
+  color: white;
+  padding: 40px 10%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left h3 {
+  font-size: 1.5rem;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-right {
+  align-self: flex-end;
+  font-size: 0.9rem;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+.feel p {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background-color: #d0ecff;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #004080;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .welcome-line1,
+  .welcome-line2 {
+    display: block;
+  }
+
+  .welcome-line1 {
+    margin-bottom: 5px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-us,
+  .our-services {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Hide hotline number in mobile view */
+  .contact-info {
+    display: none;
+  }
+}
+
+
+</style>
